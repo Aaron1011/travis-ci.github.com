@@ -17,7 +17,9 @@ For a minimal configuration, all you need to do is add the following to your `.t
 You should encrypt your password before placing it in your `.travis.yml`.
 Assuming you have the Travis CI command line client installed, you can do it like this:
 
-    travis encrypt YOUR_PASSWORD --add deploy.password
+    travis encrypt --add deploy.password
+
+You will be prompted for your password on the commmand line. This prevents your password from showing up in shell history.
 
 You can also have the `travis` tool set up everything for you:
 
