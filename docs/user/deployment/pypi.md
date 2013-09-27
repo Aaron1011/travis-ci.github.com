@@ -19,7 +19,7 @@ Instead, you will most likely want to only release to PyPI when you release a ne
 To do this, add `tags: tags` to the `on` section of your `.travis.yml` like so:
 
     deploy:
-      provider: rubygems
+      provider: pypi
       user: ...
       password: ...
       on:
@@ -84,7 +84,7 @@ it is possible to make releases conditional using the **on** option:
         branch: staging
         python: 2.7
 
-The above configuration will trigger a release if the staging branch is passing on ruby 2.0.0.
+The above configuration will trigger a release if the staging branch is passing on Python 2.7.
 
 You can also add custom conditions:
 
@@ -110,7 +110,7 @@ available conditions are:
 
 ### Running commands before and after release
 
-Sometimes you want to run commands before or after releasing a gem. You can use the `before_deploy` and `after_deploy` stages for this. These will only be triggered if Travis CI is actually pushing a release.
+Sometimes you want to run commands before or after releasing a package. You can use the `before_deploy` and `after_deploy` stages for this. These will only be triggered if Travis CI is actually pushing a release.
 
     before_deploy: "echo 'ready?'"
     deploy:

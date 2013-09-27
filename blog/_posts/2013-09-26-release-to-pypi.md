@@ -3,11 +3,11 @@ title: Release to PyPI from Travis CI
 author: Aaron Hill
 created_at: Thu 26 Sept 2013 20:25:00
 layout: post
-permalink: blog/2013-09-26-release-to-pypi.md
+permalink: blog/2013-09-26-release-to-pypi
 ---
 
 Recently, we added support for [deploying to RubyGems](/blog/2013-08-22-let-travis-push-your-rubygems).
-Now, Python package developers can also enjoy continuous deployment, thanks to out new support for PyPI!
+Now, Python package developers can also enjoy continuous deployment, thanks to our new support for PyPI!
 
 Just add the following lines to your `.travis.yml`:
 
@@ -16,7 +16,7 @@ Just add the following lines to your `.travis.yml`:
       user: "YOUR_USER_NAME"
       password: "YOUR_PASSWORD" # should be encrypted with `travis encrypt`
 
-To make things even simples, if you've installed [our command line tool](2013-08-22-let-travis-push-your-rubygems),
+To make things even simpler, if you've installed [our command line tool](http://github.com/travis-ci/travis),
 you can simply run the following command:
 
     $ travis setup pypi
@@ -32,12 +32,12 @@ Just add `on: tags: true` to your `deploy` section so that it looks like this:
       user: "YOUR_USER_NAME"
       password: "YOUR_PASSWORD"
       on:
-        tags: true
+        - tags: true
 
 
 ### Is your provider still missing?
 
-We've added support for lots of new providers, but if you'd like to see yours added, [let us know](mail:support@travis-ci.com),
+We've added support for lots of new providers, but if you'd like to see yours added, [let us know](mailto:support@travis-ci.com),
 or [send us a pull request](http://github.com/rkh/dpl).
 
 Expect to see NPM support coming in the future!
