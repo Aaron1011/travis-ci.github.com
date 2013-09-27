@@ -38,6 +38,6 @@ Just add `on: tags: true` to your `deploy` section so that it looks like this:
 ### Is your provider still missing?
 
 We've added support for lots of new providers, but if you'd like to see yours added, [let us know](mailto:support@travis-ci.com),
-or [send us a pull request](http://github.com/rkh/dpl).
+or [send us a pull request](http://github.com/travis-ci/dpl).
 
 Expect to see NPM support coming in the future!
