@@ -64,8 +64,7 @@ well and on the repositories on Travis CI.
 As a Travis CI customer, we have a [special deal for you as
 well](https://codeclimate.com/partners/travisci) to get started on Code Climate.
 
-Please note that you need a paid subscription to Code Climate for both your
-[private](https://travis-ci.com) and [open source
-projects](https://travis-ci.org).
+Code Climate is free for [open source projects](https://travis-ci.org), but requires
+a paid subscription for your [private projects](https://travis-ci.com).
 
 We're happy to be a partner in Code Climate's new offering!
